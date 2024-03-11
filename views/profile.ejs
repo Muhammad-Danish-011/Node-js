@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p>Welcome to your profile page!</p>
+    <h2>Users:</h2>
+    <ul>
+        <% users.forEach(user => { %>
+            <li>
+                <strong>Name:</strong> <%= user.name %><br>
+                <strong>Email:</strong> <%= user.Email %><br>
+                <strong>City:</strong> <%= user.city %><br>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
